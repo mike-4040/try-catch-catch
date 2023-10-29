@@ -1,0 +1,19 @@
+{
+  "name": "try-catch-catch",
+  "version": "1.0.0",
+  "description": "En example of combining try/catch with .catch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-4040/try-catch-catch.git"
+  },
+  "author": "Mike Kravtsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-4040/try-catch-catch/issues"
+  },
+  "homepage": "https://github.com/mike-4040/try-catch-catch#readme"
+}
