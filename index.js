@@ -16,19 +16,14 @@ async function apiBravoClient(input) {
 
 async function app() {
   try {
-    let alpha;
-    try {
-      alpha = await apiAlphaClient();
-    } catch (e) {
+    const alpha = await apiAlphaClient().catch(e => {
       throw new Error("API Alpha is failed", { cause: e });
-    }
+    });
 
-    let bravo;
-    try {
-      bravo = await apiBravoClient(alpha);
-    } catch (e) {
+    const bravo = await apiBravoClient(alpha).catch(e => {
       throw new Error("API Bravo is failed", { cause: e });
-    }
+    });
+
     return bravo;
   } catch (e) {
     console.error(e);
